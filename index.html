@@ -14,24 +14,33 @@
     html, body {
       height: 100%;
       font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
       color: #2f2f2f;
     }
 
     .container {
       display: flex;
       height: 100vh;
+      flex-direction: row;
     }
 
     .left {
       flex: 1;
-      background: url('Cariyelmundo-japon.png') no-repeat center center;
-      background-size: contain;
-      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .left img {
+      max-width: 100%;
+      height: auto;
+      max-height: 90%;
+      object-fit: contain;
     }
 
     .right {
       flex: 1;
-      background-color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -65,13 +74,9 @@
         flex-direction: column;
       }
 
-      .left {
-        height: 50vh;
-        background-size: cover;
-      }
-
-      .right {
-        height: 50vh;
+      .left, .right {
+        flex: none;
+        height: auto;
         padding: 1.5rem;
       }
 
@@ -87,7 +92,9 @@
 </head>
 <body>
   <div class="container">
-    <div class="left"></div>
+    <div class="left">
+      <img src="Cariyelmundo-japon.png" alt="Carí y el mundo" />
+    </div>
     <div class="right">
       <div class="content">
         <h1>Carí y el mundo</h1>
