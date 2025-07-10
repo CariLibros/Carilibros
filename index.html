@@ -1,19 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viajes contados desde la infancia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carí y el mundo</title>
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
       height: 100%;
-      background: url('Cariyelmundo-japon.png') no-repeat center center;
-      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: #2f2f2f;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background: url('cari-portada.png') no-repeat center center;
+      background-size: contain;
+      background-color: #f5f5f5;
+    }
+
+    .right {
+      flex: 1;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+    }
+
+    .content {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2d2d2d;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .soon {
+      margin-top: 2rem;
+      font-style: italic;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left {
+        height: 50vh;
+        background-size: cover;
+      }
+
+      .right {
+        height: 50vh;
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <div class="content">
+        <h1>Carí y el mundo</h1>
+        <p>
+          Bienvenidos a la colección de cuentos infantiles que explora el mundo desde la mirada curiosa de Carí, una niña que viaja con su peluche Kofi para descubrir otras culturas.
+        </p>
+        <p>
+          A través de sus ojos, los pequeños lectores aprenden que en cada país se hacen las cosas de forma diferente... ¡y eso es maravilloso!
+        </p>
+        <p class="soon">
+          Estamos preparando algo muy especial. Esta web estará disponible muy pronto.
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
