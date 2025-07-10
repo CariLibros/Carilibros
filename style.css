@@ -1,56 +1,40 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #fffdf9;
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #ffffff;
   color: #333;
-  line-height: 1.6;
-  text-align: center;
-  padding: 2rem;
 }
 
-header {
-  margin-bottom: 3rem;
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-size: 3rem;
-  color: #2F4021;
-}
-
-p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-.intro h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #5E2E17;
-}
-
-.btn {
-  display: inline-block;
+  font-size: 2.5rem;
   margin-top: 1.5rem;
-  padding: 0.8rem 2rem;
-  background-color: #2F4021;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s ease;
+  color: #000;
 }
 
-.btn:hover {
-  background-color: #5E2E17;
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #654321;
+  font-weight: 500;
 }
 
-footer {
-  margin-top: 4rem;
-  font-size: 0.9rem;
-  color: #888;
+.description {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
 }
